@@ -224,18 +224,6 @@ body.lang-zh .footer-logo {
   text-align: center;
 }
 
-.publication-line {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  margin-bottom: 1.25rem;
-  letter-spacing: 0.02em;
-}
-
-.publication-line strong {
-  color: var(--primary);
-  font-weight: 600;
-}
-
 .hero-badges {
   display: flex;
   justify-content: center;
@@ -259,6 +247,9 @@ body.lang-zh .footer-logo {
   background: var(--primary);
   color: #fff;
   border-color: var(--primary);
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.7rem;
 }
 
 .badge-type {
