@@ -86,7 +86,7 @@ If you find PersoMoni useful in your research, please cite:
 
 ## Acknowledgments
 
-This work was supported by the Anhui Province Key Laboratory of Affective Computing and Advanced Intelligent Machine, Hefei University of Technology.
+This work was supported by the [Anhui Province Key Laboratory of Affective Computing and Advanced Intelligent Machine](https://aflab.hfut.edu.cn/), Hefei University of Technology.
 
 ## License
 
