@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="PersoMoni - A clinically grounded video benchmark for fine-grained personality assessment with 15 BFI-2 sub-traits. Published in IEEE TAFFC.">
+  <meta name="keywords" content="PersoMoni, personality computing, BFI-2, video benchmark, affective computing, dataset">
+  <meta property="og:title" content="PersoMoni | IEEE TAFFC">
+  <meta property="og:description" content="168 psychological interviews, 23,000+ face-aligned clips, 15 trait dimensions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qicita.github.io/PersoMoni/">
+  <title>PersoMoni - Fine-grained Personality Assessment Benchmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="zh" href="zh.html">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a class="nav-logo" href="#top">Perso<span>Moni</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#traits">Traits</a></li>
+        <li><a href="#citation">Citation</a></li>
+        <li class="lang-switch">
+          <a href="index.html" class="lang-active" aria-current="page">EN</a>
+          <span class="lang-divider">/</span>
+          <a href="zh.html">中文</a>
+        </li>
+        <li><a class="nav-cta" href="https://github.com/QIcita/PersoMoni" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-content">
+      <p class="publication-line">
+        <strong>IEEE Transactions on Affective Computing</strong>
+      </p>
+      <div class="hero-badges">
+        <span class="badge badge-venue">IEEE TAFFC</span>
+        <span class="badge badge-type">Dataset Benchmark</span>
+      </div>
+      <h1 class="hero-title">PersoMoni</h1>
+      <p class="hero-subtitle">
+        A Comprehensive Video-Based Benchmark Dataset for Fine-grained Personality Assessment with <em>15 Trait Dimensions</em>
+      </p>
+      <div class="authors">
+        <p class="author-list">
+          Feng-Qi Cui<sup>1,2</sup>,
+          <a href="mailto:hjy@hfut.edu.cn">Jinyang Huang</a><sup>1*</sup>,
+          <a href="#">Sirui Zhao</a><sup>2</sup>,
+          <a href="#">Kun Li</a><sup>3</sup>,
+          <a href="#">Zhi Liu</a><sup>4</sup>,
+          <a href="#">Meng Li</a><sup>1</sup>,
+          <a href="#">Ziyu Jia</a><sup>5</sup>,
+          <a href="mailto:guodan@hfut.edu.cn">Dan Guo</a><sup>1*</sup>,
+          Meng Wang<sup>1</sup>
+        </p>
+        <div class="affiliations">
+          <p><sup>1</sup> Anhui Province Key Laboratory of Affective Computing and Advanced Intelligent Machine, School of Computer Science and Information Engineering, Hefei University of Technology</p>
+          <p><sup>2</sup> MoE Key Laboratory of Brain-inspired Intelligent Perception and Cognition, School of Information Science and Technology, University of Science and Technology of China</p>
+          <p><sup>3</sup> College of Information Technology, United Arab Emirates University</p>
+          <p><sup>4</sup> Department of Computer and Network Engineering, The University of Electro-Communications</p>
+          <p><sup>5</sup> Beijing Key Laboratory of Brainnetome and Brain-Computer Interface, Brainnetome Center, Institute of Automation, Chinese Academy of Sciences</p>
+        </div>
+        <p class="corresponding"><sup>*</sup> Corresponding authors</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://ieeexplore.ieee.org/document/11543185" target="_blank" rel="noopener">Paper</a>
+        <a class="btn btn-secondary" href="https://github.com/QIcita/PersoMoni" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Dataset
+        </a>
+        <a class="btn btn-ghost" href="#citation">Cite</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-value">168</span>
+          <span class="stat-label">Full-length Interviews</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">23K+</span>
+          <span class="stat-label">Face-aligned Clips</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">15</span>
+          <span class="stat-label">BFI-2 Sub-traits</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">20-30</span>
+          <span class="stat-label">Minutes per Session</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section-header">
+          <h2>Clinically Grounded Personality Computing</h2>
+          <p class="section-lead">
+            Understanding personality from visual behavior remains challenging. Existing benchmarks rely on
+            short, crowd-annotated clips and capture only coarse impressions, lacking temporal continuity,
+            clinical validity, and fine-grained sub-trait structure.
+          </p>
+        </div>
+        <figure class="teaser-figure">
+          <img
+            src="static/images/overview.svg"
+            alt="PersoMoni overview: BFI-2 taxonomy, data collection pipeline, and dataset statistics"
+            loading="lazy"
+          >
+          <figcaption>
+            <strong>Figure 1.</strong> Overview of PersoMoni: (a) BFI-2 hierarchical structure with 5 major traits and 15 sub-traits;
+            (b) guided psychological interview pipeline from recording to expert annotation; (c) dataset statistics and comparison with prior benchmarks.
+          </figcaption>
+        </figure>
+        <div class="highlights">
+          <article class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">01</div>
+            <h3>Long-horizon Naturalistic Interaction</h3>
+            <p>168 semi-structured interviews conducted by licensed counselors, eliciting authentic nonverbal cues across extended social interactions, not thin-slice impressions.</p>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">02</div>
+            <h3>Expert-validated BFI-2 Labels</h3>
+            <p>Continuous scores for all five Big Five domains and, for the first time in PTI benchmarks, fifteen validated BFI-2 sub-traits, scored independently by two psychology professionals.</p>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-icon" aria-hidden="true">03</div>
+            <h3>Open Dataset for Research</h3>
+            <p>A structured benchmark with interview videos, face-aligned clips, and expert BFI-2 annotations, to be released for academic research on fine-grained personality computing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="dataset">
+      <div class="container">
+        <div class="section-header">
+          <h2>The PersoMoni Benchmark</h2>
+          <p class="section-lead">
+            PersoMoni bridges the gap between ecological validity and computational tractability,
+            preserving the richness of full interviews while providing localized clip units for learning.
+          </p>
+        </div>
+        <div class="dataset-layout">
+          <div class="dataset-info">
+            <h3>Collection Protocol</h3>
+            <ul class="feature-list">
+              <li>
+                <strong>Semi-structured interviews</strong> with licensed psychological counselors on self-concept, relationships, and values
+              </li>
+              <li>
+                <strong>Pre-interview screening</strong> via SCL-90 and BFI-2 to tailor questioning
+              </li>
+              <li>
+                <strong>1080p front-facing recording</strong> at 30 fps, seated natural posture, continuous eye contact
+              </li>
+              <li>
+                <strong>Face-centered processing</strong> via YOLO detection, temporal segmentation into clip units
+              </li>
+              <li>
+                <strong>Three-stage QC</strong>: individual scoring, cross-review, and consensus discussion
+              </li>
+            </ul>
+          </div>
+          <div class="dataset-specs">
+            <h3>Key Properties</h3>
+            <table class="spec-table">
+              <tbody>
+                <tr><th>Participants</th><td>168 (86 F / 82 M)</td></tr>
+                <tr><th>Video clips</th><td>23,000+ face-aligned segments</td></tr>
+                <tr><th>Duration</th><td>20-30 min per interview</td></tr>
+                <tr><th>Resolution</th><td>1080p @ 30 fps</td></tr>
+                <tr><th>Label space</th><td>20-dim continuous BFI-2 vector</td></tr>
+                <tr><th>Annotation</th><td>Dual expert rating + averaging</td></tr>
+                <tr><th>Demographics</th><td>Balanced age &amp; education groups</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="comparison-banner">
+          <div class="comparison-item comparison-old">
+            <span class="comparison-label">Prior benchmarks</span>
+            <p>Short clips | Crowd labels | 5 coarse traits | Thin-slice judgments</p>
+          </div>
+          <div class="comparison-arrow" aria-hidden="true">&rarr;</div>
+          <div class="comparison-item comparison-new">
+            <span class="comparison-label">PersoMoni</span>
+            <p>Long interviews | Expert BFI-2 | 15 sub-traits | Ecologically valid</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="traits">
+      <div class="container">
+        <div class="section-header">
+          <h2>From 5 Traits to 15 Sub-traits</h2>
+          <p class="section-lead">
+            PersoMoni is the first personality computing benchmark to extend granularity from 5 to 15 dimensions,
+            aligned with the psychometrically validated BFI-2 hierarchical framework.
+          </p>
+        </div>
+        <div class="traits-grid">
+          <div class="trait-domain" data-domain="extraversion">
+            <h3>Extraversion</h3>
+            <ul>
+              <li>Sociability</li>
+              <li>Assertiveness</li>
+              <li>Energy Level</li>
+            </ul>
+          </div>
+          <div class="trait-domain" data-domain="agreeableness">
+            <h3>Agreeableness</h3>
+            <ul>
+              <li>Compassion</li>
+              <li>Respectfulness</li>
+              <li>Trust</li>
+            </ul>
+          </div>
+          <div class="trait-domain" data-domain="conscientiousness">
+            <h3>Conscientiousness</h3>
+            <ul>
+              <li>Organization</li>
+              <li>Productiveness</li>
+              <li>Responsibility</li>
+            </ul>
+          </div>
+          <div class="trait-domain" data-domain="negative">
+            <h3>Negative Emotionality</h3>
+            <ul>
+              <li>Anxiety</li>
+              <li>Depression</li>
+              <li>Emotional Volatility</li>
+            </ul>
+          </div>
+          <div class="trait-domain" data-domain="openness">
+            <h3>Open-Mindedness</h3>
+            <ul>
+              <li>Intellectual Curiosity</li>
+              <li>Aesthetic Sensitivity</li>
+              <li>Creative Imagination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="citation">
+      <div class="container">
+        <div class="section-header">
+          <h2>How to Cite</h2>
+          <p class="section-lead">
+            If you use the PersoMoni dataset in your research, please cite our paper.
+          </p>
+        </div>
+        <div class="citation-box">
+          <pre class="bibtex" id="bibtex"><code>@article{cui2026persomoni,
+  author  = {Cui, Feng-Qi and Huang, Jinyang and Zhao, Sirui and Li, Kun and Liu, Zhi and Li, Meng and Jia, Ziyu and Guo, Dan and Wang, Meng},
+  journal = {IEEE Transactions on Affective Computing},
+  title   = {PersoMoni: A Comprehensive Video-Based Benchmark Dataset for Fine-grained Personality Assessment with 15 Trait Dimensions},
+  year    = {2026},
+  pages   = {1--14},
+  doi     = {10.1109/TAFFC.2026.3698795},
+  url     = {https://ieeexplore.ieee.org/document/11543185}
+}</code></pre>
+          <button class="btn btn-copy" id="copy-btn" type="button">
+            <span class="copy-text">Copy BibTeX</span>
+            <span class="copy-done" hidden>Copied!</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">PersoMoni</span>
+        <p>Anhui Province Key Laboratory of Affective Computing and Advanced Intelligent Machine</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://ieeexplore.ieee.org/document/11543185" target="_blank" rel="noopener">Paper</a>
+        <a href="https://github.com/QIcita/PersoMoni" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:hjy@hfut.edu.cn">Contact</a>
+        <a href="#citation">Citation</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 PersoMoni Authors. Released for academic research.</p>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>

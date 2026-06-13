@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" role="img" aria-labelledby="overviewTitle overviewDesc">
+  <title id="overviewTitle">PersoMoni 数据集概述</title>
+  <desc id="overviewDesc">BFI-2 层级体系、数据采集流程与数据集统计</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f7f9; }
+      .panel { fill: #ffffff; stroke: #d8dee8; stroke-width: 1; }
+      .title { font: 600 13px 'Noto Sans SC', 'Source Sans 3', Arial, sans-serif; fill: #1a1f2e; }
+      .label { font: 500 11px 'Noto Sans SC', 'Source Sans 3', Arial, sans-serif; fill: #4a5568; }
+      .small { font: 400 9.5px 'Noto Sans SC', 'Source Sans 3', Arial, sans-serif; fill: #718096; }
+      .stat-num { font: 600 22px 'Noto Serif SC', Georgia, serif; fill: #1e3a5f; }
+      .stat-txt { font: 400 10px 'Noto Sans SC', Arial, sans-serif; fill: #4a5568; }
+      .tag { font: 600 9px 'Noto Sans SC', Arial, sans-serif; fill: #2c5282; letter-spacing: 0.04em; }
+      .node-main { fill: #1e3a5f; }
+      .node-mid { fill: #edf2f7; stroke: #2c5282; stroke-width: 1; }
+      .node-leaf { fill: #ffffff; stroke: #cbd5e0; stroke-width: 1; }
+      .arrow { stroke: #a0aec0; stroke-width: 1.2; fill: none; marker-end: url(#arrowhead); }
+      .divider { stroke: #e2e8f0; stroke-width: 1; }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#a0aec0"/>
+    </marker>
+  </defs>
+
+  <rect width="1080" height="520" class="bg"/>
+
+  <rect x="24" y="24" width="320" height="472" rx="2" class="panel"/>
+  <text x="40" y="48" class="tag">(a) BFI-2 层级体系</text>
+  <text x="40" y="72" class="title">5 个特质域，15 个子特质</text>
+
+  <rect x="124" y="92" width="120" height="30" rx="2" class="node-main"/>
+  <text x="184" y="112" text-anchor="middle" style="font:600 11px 'Noto Sans SC',Arial,sans-serif;fill:#fff">BFI-2</text>
+
+  <g transform="translate(40,140)">
+    <g>
+      <rect width="48" height="22" rx="2" class="node-mid"/><text x="24" y="15" text-anchor="middle" class="small" style="fill:#1e3a5f;font-weight:600">外向性</text>
+      <rect y="30" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="42" text-anchor="middle" class="small">社交</text>
+      <rect y="52" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="64" text-anchor="middle" class="small">果断</text>
+      <rect y="74" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="86" text-anchor="middle" class="small">精力</text>
+    </g>
+    <g transform="translate(56,0)">
+      <rect width="48" height="22" rx="2" class="node-mid"/><text x="24" y="15" text-anchor="middle" class="small" style="fill:#1e3a5f;font-weight:600">宜人性</text>
+      <rect y="30" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="42" text-anchor="middle" class="small">同情</text>
+      <rect y="52" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="64" text-anchor="middle" class="small">尊重</text>
+      <rect y="74" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="86" text-anchor="middle" class="small">信任</text>
+    </g>
+    <g transform="translate(112,0)">
+      <rect width="48" height="22" rx="2" class="node-mid"/><text x="24" y="15" text-anchor="middle" class="small" style="fill:#1e3a5f;font-weight:600">尽责性</text>
+      <rect y="30" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="42" text-anchor="middle" class="small">条理</text>
+      <rect y="52" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="64" text-anchor="middle" class="small">高效</text>
+      <rect y="74" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="86" text-anchor="middle" class="small">责任</text>
+    </g>
+    <g transform="translate(168,0)">
+      <rect width="48" height="22" rx="2" class="node-mid"/><text x="24" y="15" text-anchor="middle" class="small" style="fill:#1e3a5f;font-weight:600">负向情绪</text>
+      <rect y="30" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="42" text-anchor="middle" class="small">焦虑</text>
+      <rect y="52" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="64" text-anchor="middle" class="small">抑郁</text>
+      <rect y="74" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="86" text-anchor="middle" class="small">波动</text>
+    </g>
+    <g transform="translate(224,0)">
+      <rect width="48" height="22" rx="2" class="node-mid"/><text x="24" y="15" text-anchor="middle" class="small" style="fill:#1e3a5f;font-weight:600">开放性</text>
+      <rect y="30" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="42" text-anchor="middle" class="small">求知</text>
+      <rect y="52" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="64" text-anchor="middle" class="small">审美</text>
+      <rect y="74" width="48" height="18" rx="1" class="node-leaf"/><text x="24" y="86" text-anchor="middle" class="small">想象</text>
+    </g>
+  </g>
+
+  <line x1="184" y1="122" x2="184" y2="132" class="divider"/>
+  <line x1="64" y1="132" x2="304" y2="132" class="divider"/>
+  <line x1="64" y1="132" x2="64" y2="140" class="divider"/>
+  <line x1="120" y1="132" x2="120" y2="140" class="divider"/>
+  <line x1="176" y1="132" x2="176" y2="140" class="divider"/>
+  <line x1="232" y1="132" x2="232" y2="140" class="divider"/>
+  <line x1="288" y1="132" x2="288" y2="140" class="divider"/>
+
+  <rect x="40" y="270" width="288" height="210" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
+  <text x="52" y="292" class="label" style="font-weight:600">连续标签向量</text>
+  <text x="52" y="312" class="small">每位参与者 20 维专家验证评分</text>
+  <text x="52" y="332" class="small">5 个高层特质 + 15 个层面子特质</text>
+  <text x="52" y="352" class="small">双专家独立评分与三阶段质控</text>
+
+  <rect x="368" y="24" width="320" height="472" rx="2" class="panel"/>
+  <text x="384" y="48" class="tag">(b) 数据采集流程</text>
+  <text x="384" y="72" class="title">采集与处理</text>
+
+  <g transform="translate(384,96)">
+    <rect width="288" height="44" rx="2" class="node-mid"/>
+    <text x="16" y="18" class="label" style="font-weight:600;fill:#1e3a5f">半结构化心理咨询访谈</text>
+    <text x="16" y="34" class="small">持证咨询师，20-30 分钟，1080p @ 30fps</text>
+    <path d="M144,44 L144,58" class="arrow"/>
+    <rect y="58" width="288" height="44" rx="2" class="node-mid"/>
+    <text x="16" y="76" class="label" style="font-weight:600;fill:#1e3a5f">自然场景视频录制</text>
+    <text x="16" y="92" class="small">正面机位，自然坐姿，连续眼神交流</text>
+    <path d="M144,102 L144,116" class="arrow"/>
+    <rect y="116" width="288" height="44" rx="2" class="node-mid"/>
+    <text x="16" y="134" class="label" style="font-weight:600;fill:#1e3a5f">人脸中心化切分</text>
+    <text x="16" y="150" class="small">YOLO 检测定位，时序切分为片段单元</text>
+    <path d="M144,160 L144,174" class="arrow"/>
+    <rect y="174" width="288" height="44" rx="2" class="node-mid"/>
+    <text x="16" y="192" class="label" style="font-weight:600;fill:#1e3a5f">专家 BFI-2 标注</text>
+    <text x="16" y="208" class="small">独立评分、交叉审核、共识讨论</text>
+    <path d="M144,218 L144,232" class="arrow"/>
+    <rect y="232" width="288" height="44" rx="2" class="node-main"/>
+    <text x="16" y="250" class="label" style="font-weight:600;fill:#fff">PersoMoni 基准数据集</text>
+    <text x="16" y="266" class="small" style="fill:#e2e8f0">视频 + 片段 + 20 维人格标签</text>
+  </g>
+
+  <rect x="384" y="400" width="288" height="80" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
+  <text x="396" y="422" class="label" style="font-weight:600">访谈前筛查</text>
+  <text x="396" y="440" class="small">SCL-90 与 BFI-2 量表定制提问策略</text>
+  <text x="396" y="458" class="small">伦理审批与知情同意</text>
+
+  <rect x="712" y="24" width="344" height="472" rx="2" class="panel"/>
+  <text x="728" y="48" class="tag">(c) 数据集概览</text>
+  <text x="728" y="72" class="title">核心统计</text>
+
+  <g transform="translate(728,96)">
+    <rect width="150" height="72" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
+    <text x="16" y="36" class="stat-num">168</text>
+    <text x="16" y="56" class="stat-txt">参与者</text>
+    <rect x="166" width="150" height="72" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
+    <text x="182" y="36" class="stat-num">23K+</text>
+    <text x="182" y="56" class="stat-txt">人脸对齐片段</text>
+    <rect y="88" width="150" height="72" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
+    <text x="16" y="124" class="stat-num">15</text>
+    <text x="16" y="144" class="stat-txt">BFI-2 子特质</text>
+    <rect x="166" y="88" width="150" height="72" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
+    <text x="182" y="124" class="stat-num">20-30</text>
+    <text x="182" y="144" class="stat-txt">分钟 / 场访谈</text>
+  </g>
+
+  <rect x="728" y="280" width="312" height="200" rx="2" fill="#ffffff" stroke="#d8dee8"/>
+  <text x="740" y="304" class="label" style="font-weight:600">与既有基准对比</text>
+  <text x="740" y="330" class="small" style="font-weight:600;fill:#718096">既有基准</text>
+  <text x="740" y="348" class="small">短片段 | 众包标签 | 5 个粗粒度特质</text>
+  <line x1="740" y1="362" x2="1028" y2="362" class="divider"/>
+  <text x="740" y="382" class="small" style="font-weight:600;fill:#1e3a5f">PERSOMONI</text>
+  <text x="740" y="400" class="small">长时访谈 | 专家 BFI-2 | 15 个子特质</text>
+  <text x="740" y="418" class="small">临床级生态效度采集场景</text>
+  <text x="740" y="444" class="small">人口学：女 86 / 男 82，年龄分布均衡</text>
+  <text x="740" y="462" class="small">分辨率：1080p，30 fps</text>
