@@ -6,7 +6,7 @@
 
 **PersoMoni: A Comprehensive Video-Based Benchmark Dataset for Fine-grained Personality Assessment with 15 Trait Dimensions**
 
-Feng-Qi Cui, [Jinyang Huang](mailto:hjy@hfut.edu.cn)\*, Sirui Zhao, Kun Li, Zhi Liu, Meng Li, Ziyu Jia, [Dan Guo](mailto:guodan@hfut.edu.cn)\*, Meng Wang
+Feng-Qi Cui, [Jinyang Huang](https://happyisac.github.io/PersonHomePage/)\*, Sirui Zhao, Kun Li, Zhi Liu, Meng Li, Ziyu Jia, [Dan Guo](mailto:guodan@hfut.edu.cn)\*, Meng Wang
 
 > Published in **IEEE Transactions on Affective Computing (TAFFC)** — [IEEE Xplore](https://ieeexplore.ieee.org/document/11543185)
 
