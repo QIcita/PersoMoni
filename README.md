@@ -43,7 +43,7 @@ PersoMoni is a clinically grounded benchmark for fine-grained, temporally rich p
 
 ## Key Features
 
-- **Long-horizon naturalistic interaction** - 20-30 min semi-structured interviews with licensed counselors
+- **Long-horizon naturalistic interaction** - ~25 min avg. semi-structured interviews with licensed counselors
 - **Expert-validated BFI-2 labels** - dual professional rating with three-stage quality control
 - **Fine-grained trait structure** - 5 Big Five domains + 15 BFI-2 sub-traits (20-dim continuous vector)
 - **Face-centered clip corpus** - 20,000+ 1080p segments for temporal modeling
@@ -55,7 +55,7 @@ PersoMoni is a clinically grounded benchmark for fine-grained, temporally rich p
 |----------|-------|
 | Participants | 168 (86 F / 82 M) |
 | Video clips | 20,000+ |
-| Interview duration | 20-30 min |
+| Interview duration | ~25 min avg. |
 | Resolution | 1080p @ 30 fps |
 | Label space | 20-dim BFI-2 continuous scores |
 

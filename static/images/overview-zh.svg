@@ -86,7 +86,7 @@
   <g transform="translate(384,96)">
     <rect width="288" height="44" rx="2" class="node-mid"/>
     <text x="16" y="18" class="label" style="font-weight:600;fill:#1e3a5f">半结构化心理咨询访谈</text>
-    <text x="16" y="34" class="small">持证咨询师，20-30 分钟，1080p @ 30fps</text>
+    <text x="16" y="34" class="small">持证咨询师，平均 25 分钟，1080p @ 30fps</text>
     <path d="M144,44 L144,58" class="arrow"/>
     <rect y="58" width="288" height="44" rx="2" class="node-mid"/>
     <text x="16" y="76" class="label" style="font-weight:600;fill:#1e3a5f">自然场景视频录制</text>
@@ -122,11 +122,11 @@
     <text x="182" y="36" class="stat-num">20K+</text>
     <text x="182" y="56" class="stat-txt">人脸对齐片段</text>
     <rect y="88" width="150" height="72" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
-    <text x="16" y="124" class="stat-num">15</text>
-    <text x="16" y="144" class="stat-txt">BFI-2 子特质</text>
+    <text x="16" y="124" class="stat-num" style="font-size:18px">5+15</text>
+    <text x="16" y="144" class="stat-txt">大五+BFI-2子特质</text>
     <rect x="166" y="88" width="150" height="72" rx="2" fill="#edf2f7" stroke="#d8dee8"/>
-    <text x="182" y="124" class="stat-num">20-30</text>
-    <text x="182" y="144" class="stat-txt">分钟 / 场访谈</text>
+    <text x="182" y="124" class="stat-num">25</text>
+    <text x="182" y="144" class="stat-txt">平均分钟</text>
   </g>
 
   <rect x="728" y="280" width="312" height="200" rx="2" fill="#ffffff" stroke="#d8dee8"/>
@@ -135,7 +135,7 @@
   <text x="740" y="348" class="small">短片段 | 众包标签 | 5 个粗粒度特质</text>
   <line x1="740" y1="362" x2="1028" y2="362" class="divider"/>
   <text x="740" y="382" class="small" style="font-weight:600;fill:#1e3a5f">PERSOMONI</text>
-  <text x="740" y="400" class="small">长时访谈 | 专家 BFI-2 | 15 个子特质</text>
+  <text x="740" y="400" class="small">长时访谈 | 专家 BFI-2 | 5 大五特质 + 15 子特质</text>
   <text x="740" y="418" class="small">临床级生态效度采集场景</text>
   <text x="740" y="444" class="small">人口学：女 86 / 男 82，年龄分布均衡</text>
   <text x="740" y="462" class="small">分辨率：1080p，30 fps</text>
