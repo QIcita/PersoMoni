@@ -6,7 +6,8 @@
   --surface: #ffffff;
   --text: #1a1f2e;
   --text-muted: #4a5568;
-  --text-light: #718096;
+  --text-light: #6b7280;
+  --text-emphasis: #1e3a5f;
   --primary: #1e3a5f;
   --primary-mid: #2c5282;
   --accent: #2c5282;
@@ -262,7 +263,7 @@ body.lang-zh .footer-logo {
 
 .badge-type {
   background: var(--bg-alt);
-  color: var(--text-muted);
+  color: var(--primary-mid);
 }
 
 .hero-title {
@@ -285,9 +286,16 @@ body.lang-zh .footer-logo {
   font-weight: 400;
 }
 
+.key-term {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.hero-subtitle .key-term,
 .hero-subtitle em {
-  font-style: italic;
-  color: var(--text);
+  color: var(--primary);
+  font-style: normal;
+  font-weight: 600;
 }
 
 .authors {
@@ -344,9 +352,18 @@ body.lang-zh .footer-logo {
   color: var(--text-muted);
 }
 
+.affiliations a {
+  color: var(--primary-mid);
+  text-decoration-color: rgba(44, 82, 130, 0.3);
+}
+
+.affiliations a:hover {
+  color: var(--primary);
+}
+
 .corresponding {
   font-size: 0.76rem;
-  color: var(--text-light);
+  color: var(--text-muted);
   margin-top: 0.45rem;
   font-style: italic;
   text-align: center;
@@ -438,7 +455,7 @@ body.lang-zh .footer-logo {
 .stat-label {
   display: block;
   font-size: 0.76rem;
-  color: var(--text-light);
+  color: var(--text-muted);
   margin-top: 0.25rem;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -490,6 +507,12 @@ body.lang-zh .footer-logo {
   margin-inline: auto;
 }
 
+.section-lead .key-term,
+.section-lead strong {
+  color: var(--text-emphasis);
+  font-weight: 600;
+}
+
 /* Teaser figure */
 .teaser-figure {
   margin-bottom: 2.25rem;
@@ -526,7 +549,7 @@ body.lang-zh .footer-logo {
 }
 
 .teaser-figure figcaption strong {
-  color: var(--text);
+  color: var(--text-emphasis);
   font-weight: 600;
 }
 
@@ -590,10 +613,21 @@ body.lang-zh .footer-logo {
   text-align: justify;
 }
 
+.highlight-card p .key-term {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 /* Dataset */
 .dataset-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dataset-top {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   align-items: stretch;
 }
@@ -603,7 +637,9 @@ body.lang-zh .footer-logo {
   background: var(--surface);
   border: 1px solid var(--border);
   padding: 1.35rem 1.5rem;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .dataset-info h3,
@@ -619,6 +655,7 @@ body.lang-zh .footer-logo {
 
 .feature-list {
   list-style: none;
+  flex: 1;
 }
 
 .feature-list li {
@@ -641,14 +678,19 @@ body.lang-zh .footer-logo {
 }
 
 .feature-list strong {
-  color: var(--text);
+  color: var(--primary);
   font-weight: 600;
+}
+
+.feature-list li:last-child {
+  margin-bottom: 0;
 }
 
 .spec-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
+  flex: 1;
 }
 
 .spec-table th,
@@ -670,18 +712,26 @@ body.lang-zh .footer-logo {
   font-weight: 400;
 }
 
+.spec-table td .key-term,
+.spec-table td strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .comparison-banner {
-  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr 3rem 1fr;
   align-items: stretch;
+  width: 100%;
   border: 1px solid var(--border);
   background: var(--surface);
 }
 
 .comparison-item {
   padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .comparison-label {
@@ -705,6 +755,11 @@ body.lang-zh .footer-logo {
   font-size: 0.86rem;
   color: var(--text-muted);
   line-height: 1.55;
+}
+
+.comparison-new p .key-term {
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .comparison-arrow {
@@ -811,7 +866,7 @@ body.lang-zh .footer-logo {
   font-size: 0.84rem;
   font-weight: 600;
   margin-bottom: 0.65rem;
-  color: var(--text);
+  color: var(--text-emphasis);
   line-height: 1.35;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--rule);
@@ -898,7 +953,17 @@ body.lang-zh .footer-logo {
   font-size: 0.8rem;
   max-width: 420px;
   line-height: 1.6;
-  color: var(--text-light);
+  color: var(--text-muted);
+}
+
+.footer-brand a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-brand a:hover {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 .footer-links {
@@ -932,7 +997,7 @@ body.lang-zh .footer-logo {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .dataset-layout {
+  .dataset-top {
     grid-template-columns: 1fr;
   }
 

@@ -56,7 +56,7 @@
       </div>
       <h1 class="hero-title">PersoMoni</h1>
       <p class="hero-subtitle">
-        A Comprehensive Video-Based Benchmark Dataset for Fine-grained Personality Assessment with <em>15 Trait Dimensions</em>
+        A Comprehensive Video-Based Benchmark Dataset for Fine-grained Personality Assessment with <strong class="key-term">15 Trait Dimensions</strong>
       </p>
       <div class="authors">
         <p class="author-list">
@@ -118,8 +118,10 @@
           <h2>Clinically Grounded Personality Computing</h2>
           <p class="section-lead">
             Understanding personality from visual behavior remains challenging. Existing benchmarks rely on
-            short, crowd-annotated clips and capture only coarse impressions, lacking temporal continuity,
-            clinical validity, and fine-grained sub-trait structure.
+            short, crowd-annotated clips and capture only coarse impressions, lacking
+            <strong class="key-term">temporal continuity</strong>,
+            <strong class="key-term">clinical validity</strong>, and
+            <strong class="key-term">fine-grained sub-trait structure</strong>.
           </p>
         </div>
         <figure class="teaser-figure">
@@ -137,12 +139,12 @@
           <article class="highlight-card">
             <div class="highlight-icon" aria-hidden="true">01</div>
             <h3>Long-horizon Naturalistic Interaction</h3>
-            <p>168 semi-structured interviews conducted by licensed counselors, eliciting authentic nonverbal cues across extended social interactions, not thin-slice impressions.</p>
+            <p><strong class="key-term">168</strong> semi-structured interviews conducted by licensed counselors, eliciting authentic nonverbal cues across extended social interactions, not thin-slice impressions.</p>
           </article>
           <article class="highlight-card">
             <div class="highlight-icon" aria-hidden="true">02</div>
             <h3>Expert-validated BFI-2 Labels</h3>
-            <p>Continuous scores for all five Big Five domains and, for the first time in PTI benchmarks, fifteen validated BFI-2 sub-traits, scored independently by two psychology professionals.</p>
+            <p>Continuous scores for all five Big Five domains and, for the first time in PTI benchmarks, <strong class="key-term">fifteen validated BFI-2 sub-traits</strong>, scored independently by two psychology professionals.</p>
           </article>
           <article class="highlight-card">
             <div class="highlight-icon" aria-hidden="true">03</div>
@@ -163,51 +165,53 @@
           </p>
         </div>
         <div class="dataset-layout">
-          <div class="dataset-info">
-            <h3>Collection Protocol</h3>
-            <ul class="feature-list">
-              <li>
-                <strong>Semi-structured interviews</strong> with licensed psychological counselors on self-concept, relationships, and values
-              </li>
-              <li>
-                <strong>Pre-interview screening</strong> via SCL-90 and BFI-2 to tailor questioning
-              </li>
-              <li>
-                <strong>1080p front-facing recording</strong> at 30 fps, seated natural posture, continuous eye contact
-              </li>
-              <li>
-                <strong>Face-centered processing</strong> via YOLO detection, temporal segmentation into clip units
-              </li>
-              <li>
-                <strong>Three-stage QC</strong>: individual scoring, cross-review, and consensus discussion
-              </li>
-            </ul>
-          </div>
-          <div class="dataset-specs">
-            <h3>Key Properties</h3>
-            <table class="spec-table">
-              <tbody>
-                <tr><th>Participants</th><td>168 (86 F / 82 M)</td></tr>
-                <tr><th>Video clips</th><td>23,000+ face-aligned segments</td></tr>
-                <tr><th>Duration</th><td>20-30 min per interview</td></tr>
-                <tr><th>Resolution</th><td>1080p @ 30 fps</td></tr>
-                <tr><th>Label space</th><td>20-dim continuous BFI-2 vector</td></tr>
-                <tr><th>Annotation</th><td>Dual expert rating + averaging</td></tr>
-                <tr><th>Demographics</th><td>Balanced age &amp; education groups</td></tr>
-              </tbody>
-            </table>
+          <div class="dataset-top">
+            <div class="dataset-info">
+              <h3>Collection Protocol</h3>
+              <ul class="feature-list">
+                <li>
+                  <strong>Semi-structured interviews</strong> with licensed psychological counselors on self-concept, relationships, and values
+                </li>
+                <li>
+                  <strong>Pre-interview screening</strong> via SCL-90 and BFI-2 to tailor questioning
+                </li>
+                <li>
+                  <strong>1080p front-facing recording</strong> at 30 fps, seated natural posture, continuous eye contact
+                </li>
+                <li>
+                  <strong>Face-centered processing</strong> via YOLO detection, temporal segmentation into clip units
+                </li>
+                <li>
+                  <strong>Three-stage QC</strong>: individual scoring, cross-review, and consensus discussion
+                </li>
+              </ul>
+            </div>
+            <div class="dataset-specs">
+              <h3>Key Properties</h3>
+              <table class="spec-table">
+                <tbody>
+                  <tr><th>Participants</th><td>168 (86 F / 82 M)</td></tr>
+                  <tr><th>Video clips</th><td>23,000+ face-aligned segments</td></tr>
+                  <tr><th>Duration</th><td>20-30 min per interview</td></tr>
+                  <tr><th>Resolution</th><td>1080p @ 30 fps</td></tr>
+                  <tr><th>Label space</th><td>20-dim continuous BFI-2 vector</td></tr>
+                  <tr><th>Annotation</th><td>Dual expert rating + averaging</td></tr>
+                  <tr><th>Demographics</th><td>Balanced age &amp; education groups</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="comparison-banner">
-          <div class="comparison-item comparison-old">
-            <span class="comparison-label">Prior benchmarks</span>
-            <p>Short clips | Crowd labels | 5 coarse traits | Thin-slice judgments</p>
+            <div class="comparison-item comparison-old">
+              <span class="comparison-label">Prior benchmarks</span>
+              <p>Short clips | Crowd labels | 5 coarse traits | Thin-slice judgments</p>
+            </div>
+            <div class="comparison-arrow" aria-hidden="true">&rarr;</div>
+            <div class="comparison-item comparison-new">
+              <span class="comparison-label">PersoMoni</span>
+              <p>Long interviews | Expert <strong class="key-term">BFI-2</strong> | <strong class="key-term">15 sub-traits</strong> | Ecologically valid</p>
+            </div>
           </div>
-          <div class="comparison-arrow" aria-hidden="true">&rarr;</div>
-          <div class="comparison-item comparison-new">
-            <span class="comparison-label">PersoMoni</span>
-            <p>Long interviews | Expert BFI-2 | 15 sub-traits | Ecologically valid</p>
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -217,8 +221,9 @@
         <div class="section-header">
           <h2>From 5 Traits to 15 Sub-traits</h2>
           <p class="section-lead">
-            PersoMoni is the first personality computing benchmark to extend granularity from 5 to 15 dimensions,
-            aligned with the psychometrically validated BFI-2 hierarchical framework.
+            PersoMoni is the first personality computing benchmark to extend granularity from
+            <strong class="key-term">5</strong> to <strong class="key-term">15</strong> dimensions,
+            aligned with the psychometrically validated <strong class="key-term">BFI-2</strong> hierarchical framework.
           </p>
         </div>
         <div class="traits-grid">

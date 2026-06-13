@@ -56,7 +56,7 @@
       </div>
       <h1 class="hero-title">PersoMoni</h1>
       <p class="hero-subtitle">
-        面向细粒度人格评估的综合性视频基准数据集，涵盖 <em>15 个 BFI-2 子特质维度</em>
+        面向<strong class="key-term">细粒度人格评估</strong>的综合性视频基准数据集，涵盖 <strong class="key-term">15</strong> 个 <strong class="key-term">BFI-2</strong> 子特质维度
       </p>
       <div class="authors">
         <p class="author-list">
@@ -118,7 +118,7 @@
           <h2>临床级人格计算基准</h2>
           <p class="section-lead">
             从视觉行为中理解人格特质仍面临诸多挑战。现有人格特质识别（PTI）基准多基于短时、众包标注的视频片段，
-            只能捕捉粗粒度的第一印象判断，缺乏时间连续性、临床效度，以及细粒度子特质结构。
+            只能捕捉粗粒度的第一印象判断，缺乏<strong class="key-term">时间连续性</strong>、<strong class="key-term">临床效度</strong>，以及<strong class="key-term">细粒度子特质结构</strong>。
           </p>
         </div>
         <figure class="teaser-figure overview-figure">
@@ -273,12 +273,12 @@
           <article class="highlight-card">
             <div class="highlight-icon" aria-hidden="true">01</div>
             <h3>长时程自然交互</h3>
-            <p>168 场由持证心理咨询师主导的半结构化访谈，在真实社交互动中激发丰富的非言语行为线索，而非短时片段的第一印象判断。</p>
+            <p><strong class="key-term">168</strong> 场由持证心理咨询师主导的半结构化访谈，在真实社交互动中激发丰富的非言语行为线索，而非短时片段的第一印象判断。</p>
           </article>
           <article class="highlight-card">
             <div class="highlight-icon" aria-hidden="true">02</div>
             <h3>专家标注的 BFI-2 标签</h3>
-            <p>为五大人格特质及 15 个 BFI-2 子特质提供连续评分，这是 PTI 领域首次覆盖完整子特质体系，由两位心理学专家独立评定。</p>
+            <p>为五大人格特质及 <strong class="key-term">15 个 BFI-2 子特质</strong>提供连续评分，这是 PTI 领域首次覆盖完整子特质体系，由两位心理学专家独立评定。</p>
           </article>
           <article class="highlight-card">
             <div class="highlight-icon" aria-hidden="true">03</div>
@@ -299,49 +299,52 @@
           </p>
         </div>
         <div class="dataset-layout">
-          <div class="dataset-info">
-            <h3>采集流程</h3>
-            <ul class="feature-list">
-              <li>
-                <strong>半结构化访谈</strong>：持证心理咨询师围绕自我认知、人际关系与价值观展开开放式提问
-              </li>
-              <li>
-                <strong>访谈前筛查</strong>：通过 SCL-90 与 BFI-2 量表定制提问策略
-              </li>
-              <li>
-                <strong>1080p 正面录制</strong>：30 fps，自然坐姿，保持连续眼神交流
-              </li>
-              <li>
-                <strong>人脸中心化处理</strong>：YOLO 检测定位，时序切分为片段单元
-              </li>
-              <li>
-                <strong>三阶段质控</strong>：独立评分、交叉审核、分歧共识讨论
-              </li>
-            </ul>
-          </div>
-          <div class="dataset-specs">
-            <h3>核心属性</h3>
-            <table class="spec-table">
-              <tbody>
-                <tr><th>参与者</th><td>168 人（女 86 / 男 82）</td></tr>
-                <tr><th>视频片段</th><td>23,000+ 人脸对齐片段</td></tr>
-                <tr><th>访谈时长</th><td>每场 20-30 分钟</td></tr>
-                <tr><th>分辨率</th><td>1080p @ 30 fps</td></tr>
-                <tr><th>标签空间</th><td>20 维连续 BFI-2 向量</td></tr>
-                <tr><th>标注方式</th><td>双专家独立评分取均值</td></tr>
-                <tr><th>人口学分布</th><td>年龄与教育背景均衡</td></tr>
-              </tbody>
-            </table>
+          <div class="dataset-top">
+            <div class="dataset-info">
+              <h3>采集流程</h3>
+              <ul class="feature-list">
+                <li>
+                  <strong>半结构化访谈</strong>：持证心理咨询师围绕自我认知、人际关系与价值观展开开放式提问
+                </li>
+                <li>
+                  <strong>访谈前筛查</strong>：通过 SCL-90 与 BFI-2 量表定制提问策略
+                </li>
+                <li>
+                  <strong>1080p 正面录制</strong>：30 fps，自然坐姿，保持连续眼神交流
+                </li>
+                <li>
+                  <strong>人脸中心化处理</strong>：YOLO 检测定位，时序切分为片段单元
+                </li>
+                <li>
+                  <strong>三阶段质控</strong>：独立评分、交叉审核、分歧共识讨论
+                </li>
+              </ul>
+            </div>
+            <div class="dataset-specs">
+              <h3>核心属性</h3>
+              <table class="spec-table">
+                <tbody>
+                  <tr><th>参与者</th><td>168 人（女 86 / 男 82）</td></tr>
+                  <tr><th>视频片段</th><td>23,000+ 人脸对齐片段</td></tr>
+                  <tr><th>访谈时长</th><td>每场 20-30 分钟</td></tr>
+                  <tr><th>分辨率</th><td>1080p @ 30 fps</td></tr>
+                  <tr><th>标签空间</th><td>20 维连续 BFI-2 向量</td></tr>
+                  <tr><th>标注方式</th><td>双专家独立评分取均值</td></tr>
+                  <tr><th>人口学分布</th><td>年龄与教育背景均衡</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="comparison-banner">
-          <div class="comparison-item comparison-old">
-            <span class="comparison-label">既有基准</span>
-            <p>短片段 | 众包标签 | 5 个粗粒度特质 | 薄片段印象判断</p>
-          </div>
-          <div class="comparison-arrow" aria-hidden="true">&rarr;</div>
-          <div class="comparison-item comparison-new">
-            <span class="comparison-label">PersoMoni</span>
-            <p>长时访谈 | 专家 BFI-2 标注 | 15 个子特质 | 生态效度高</p>
+            <div class="comparison-item comparison-old">
+              <span class="comparison-label">既有基准</span>
+              <p>短片段 | 众包标签 | 5 个粗粒度特质 | 薄片段印象判断</p>
+            </div>
+            <div class="comparison-arrow" aria-hidden="true">&rarr;</div>
+            <div class="comparison-item comparison-new">
+              <span class="comparison-label">PersoMoni</span>
+              <p>长时访谈 | 专家 <strong class="key-term">BFI-2</strong> 标注 | <strong class="key-term">15 个子特质</strong> | 生态效度高</p>
+            </div>
           </div>
         </div>
       </div>
@@ -352,8 +355,8 @@
         <div class="section-header">
           <h2>从 5 个特质到 15 个子特质</h2>
           <p class="section-lead">
-            PersoMoni 是首个将人格计算粒度从 5 维拓展至 15 维的基准数据集，
-            与心理测量学验证的 BFI-2 层级框架完全对齐。
+            PersoMoni 是首个将人格计算粒度从 <strong class="key-term">5</strong> 维拓展至 <strong class="key-term">15</strong> 维的基准数据集，
+            与心理测量学验证的 <strong class="key-term">BFI-2</strong> 层级框架完全对齐。
           </p>
         </div>
         <div class="traits-grid">
