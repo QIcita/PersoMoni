@@ -35,7 +35,7 @@ The release will include BFI-2 annotations and processed visual features to supp
 
 ## Overview
 
-PersoMoni is a clinically grounded benchmark for fine-grained, temporally rich personality computing. The dataset contains **168** full-length psychological interviews conducted by licensed counselors, producing over **23,000** aligned facial video segments. Each participant is annotated using the full **BFI-2** taxonomy, providing continuous labels for five major traits and **fifteen validated sub-traits**, the first benchmark to extend personality granularity from 5 to 15 dimensions.
+PersoMoni is a clinically grounded benchmark for fine-grained, temporally rich personality computing. The dataset contains **168** full-length psychological interviews conducted by licensed counselors, producing over **20,000** aligned facial video segments. Each participant is annotated using the full **BFI-2** taxonomy, providing continuous labels for five major traits and **fifteen validated sub-traits**, the first benchmark to extend personality granularity from 5 to 15 dimensions.
 
 <p align="center">
   <img width="90%" alt="PersoMoni overview" src="static/images/overview.svg" />
@@ -46,7 +46,7 @@ PersoMoni is a clinically grounded benchmark for fine-grained, temporally rich p
 - **Long-horizon naturalistic interaction** - 20-30 min semi-structured interviews with licensed counselors
 - **Expert-validated BFI-2 labels** - dual professional rating with three-stage quality control
 - **Fine-grained trait structure** - 5 Big Five domains + 15 BFI-2 sub-traits (20-dim continuous vector)
-- **Face-centered clip corpus** - 23,000+ 1080p segments for temporal modeling
+- **Face-centered clip corpus** - 20,000+ 1080p segments for temporal modeling
 - **Privacy-aware release** - feature maps instead of raw videos
 
 ## Dataset Statistics
@@ -54,7 +54,7 @@ PersoMoni is a clinically grounded benchmark for fine-grained, temporally rich p
 | Property | Value |
 |----------|-------|
 | Participants | 168 (86 F / 82 M) |
-| Video clips | 23,000+ |
+| Video clips | 20,000+ |
 | Interview duration | 20-30 min |
 | Resolution | 1080p @ 30 fps |
 | Label space | 20-dim BFI-2 continuous scores |
